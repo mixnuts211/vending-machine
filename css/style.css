@@ -40,6 +40,13 @@ body{
    clip-path: inset(50%);
    overflow: hidden;
 }
+.btn-basic-style{
+   font-family: inherit;
+   border: #ddd;
+   background-color: #fff;
+   box-shadow: 1px 1px 3px 3px #ddd;
+   cursor: pointer;
+}
 /* content - header */
  .header{
    width: 386px;
@@ -71,17 +78,13 @@ body{
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr;
    gap: 12px;
+   margin-bottom: 20px;
    background-color: aquamarine;
 }
 .beverage-list-btn{
    width: 94px;
    padding: 11px 11px 9px 11px;
-   font-family: inherit;
-   border: #ddd;
-   background-color: #fff;
-   box-shadow: 1px 1px 3px 3px #ddd;
    border-radius: 10px;
-   cursor: pointer;
 }
 /* 버튼의 text-align user agent stylesheet는 center*/
 .beverage-list-con-img{
@@ -99,18 +102,24 @@ body{
    border-radius: 20px;
 }
 
-/* 반복되는 컴포넌트 */
+
 .money-left-wrap, .get-beverage{
-   width: 100%;
    display: flex;
 }
 .cash-info{
    display: flex;
    justify-content: space-between;
    flex-grow: 1;
+   padding: 6px 10px;
+   border-radius: 5px;
    background-color: #EAE8FE;
 }
-
+.submit-btn{
+   flex-shrink: 0;
+   width: 94px;
+   margin-left:12px;
+   border-radius: 5px;
+}
 
 
 
