@@ -5,6 +5,9 @@ body, h1, h2, h3, ul, li{
    margin: 0;
    padding: 0;
 }
+img{
+   vertical-align: top;
+}
 li{
    list-style: none;
 }
@@ -35,6 +38,9 @@ body{
    margin: 0 auto;
    margin-bottom: 86px;
    background-color: wheat;
+ }
+ h1 img{
+   width: 100%;
  }
 
  .main{
