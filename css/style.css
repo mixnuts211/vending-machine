@@ -42,9 +42,9 @@ body{
 }
 .btn-basic-style{
    font-family: inherit;
-   border: #ddd;
+   border: #BDBDBD;
    background-color: #fff;
-   box-shadow: 1px 1px 3px 2px #ddd;
+   box-shadow: 1px 1px 4px 1px #BDBDBD;
    cursor: pointer;
 }
 /* content - header */
@@ -105,7 +105,7 @@ body{
 
 .money-leftover-wrap, .get-beverage-wrap, .deposit-input{
    display: flex;
-   margin-bottom: 11px;
+   margin-top: 11px;
 }
 .cash-info{
    display: flex;
@@ -127,10 +127,49 @@ body{
    padding: 6px;
    font-size: inherit;
    font-weight: inherit;
-   border: 1px solid #ddd;
+   border: 1px solid #BDBDBD;
    border-radius: 5px;
 }
 
+.get-beverage-list{
+   padding: 12px;
+   box-sizing: border-box;
+   flex-grow: 1;
+   height: 106px;
+   overflow: scroll;
+   border-radius: 5px;
+   border: 1px solid #BDBDBD;
+   background-color: #EAE8FE;
+}
+.get-beverage-list li{
+   padding: 6px 8px 8px 10px;
+   display: flex;
+   align-items: center;
+   border-radius: 5px;
+   background-color: #fff;
+}
+.get-beverage-list li + li{
+   margin-top: 6px;
+}
+.get-beverage-list-img{
+   width:18px;
+}
+.get-beverage-list-text{
+   font-size: 9px;
+   margin: 0 10px;
+   flex-grow: 1;
+}
+.get-beverage-list-num{
+   width: 30px;
+   text-align: center;
+   line-height: 30px;
+   border: 1px solid #BDBDBD;
+   border-radius: 5px;
+}
+.get-beverage-wrap button{
+   background-color: #6327FE;
+   color: #fff;
+}
 /* section 2 */
 .money-info{
    padding: 9px 27px;
