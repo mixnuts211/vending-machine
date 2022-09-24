@@ -183,4 +183,14 @@ body{
    grid-area: 2 / 2 / 3 / 3;
    background-color: #fff;
 }
-
+.get-list h2{
+   text-align: center;
+   margin-bottom: 12px;
+}
+.get-list .get-beverage-list{
+   height: 364px;
+}
+.total-text{
+   text-align: right;
+   margin-top: 6px;
+}
