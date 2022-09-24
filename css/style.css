@@ -26,7 +26,6 @@ h1, h2, h3{
  .wrapper{
     width: 748px;
     margin: 0 auto;
-    background-color: yellowgreen;
  }
 
 /* content */
@@ -42,6 +41,7 @@ body{
 }
 .btn-basic-style{
    font-family: inherit;
+   font-weight: inherit;
    border: #BDBDBD;
    background-color: #fff;
    box-shadow: 1px 1px 4px 1px #BDBDBD;
@@ -51,8 +51,7 @@ body{
  .header{
    width: 386px;
    margin: 0 auto;
-   margin-bottom: 86px;
-   background-color: wheat;
+   margin-bottom: 68px;
  }
  h1 img{
    width: 100%;
@@ -62,9 +61,10 @@ body{
  .main{
    width:100%;
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   /* grid-template-columns: 1fr 1fr;  */
+   grid-template-columns: 360px 360px;
+   grid-template-rows: 50px 474px;
    gap: 20px 28px;
-   background-color: yellow;
  }
 
 /* section 1 */
@@ -79,33 +79,36 @@ body{
    grid-template-rows: 1fr 1fr;
    gap: 12px;
    margin-bottom: 20px;
-   background-color: aquamarine;
 }
 .beverage-list-btn{
    width: 94px;
-   padding: 11px 11px 9px 11px;
+   padding: 11px;
    border-radius: 10px;
 }
 /* 버튼의 text-align user agent stylesheet는 center*/
+.beverage-list-btn:hover{
+   outline: 3px solid #6327FE;
+   border-radius: 10px;
+}
 .beverage-list-con-img{
    width: 36px;
 }
 .beverage-list-con-text{
+   display: inline-block;
    font-size: 9px;
-   margin: 7px auto;
+   margin: 4px auto;
 }
 .beverage-list-price{
-   padding: 5px 15px;
+   padding: 2px 16px;
    font-size: 12px;
    background-color: #6327FE;
    color: #fff;
-   border-radius: 20px;
+   border-radius: 50px;
 }
-
 
 .money-leftover-wrap, .get-beverage-wrap, .deposit-input{
    display: flex;
-   margin-top: 11px;
+   margin-top: 12px;
 }
 .cash-info{
    display: flex;
@@ -113,6 +116,7 @@ body{
    flex-grow: 1;
    padding: 6px 10px;
    border-radius: 5px;
+   font-size: 14px;
    background-color: #EAE8FE;
 }
 .submit-btn{
@@ -120,19 +124,21 @@ body{
    width: 94px;
    margin-left:12px;
    border-radius: 5px;
+   font-size: 13px;
 }
 
 .deposit-input input{
    flex-grow: 1;
    padding: 6px;
-   font-size: inherit;
+   font-family: inherit;
+   font-size: 13px;
    font-weight: inherit;
    border: 1px solid #BDBDBD;
    border-radius: 5px;
 }
 
 .get-beverage-list{
-   padding: 12px;
+   padding: 12px 18px 12px 12px;
    box-sizing: border-box;
    flex-grow: 1;
    height: 106px;
@@ -142,11 +148,10 @@ body{
    background-color: #EAE8FE;
 }
 .get-beverage-list li{
-   padding: 6px 8px 8px 10px;
+   padding: 6px 8px 7px 10px;
    display: flex;
    align-items: center;
    border-radius: 5px;
-   background-color: #fff;
 }
 .get-beverage-list li + li{
    margin-top: 6px;
@@ -160,21 +165,26 @@ body{
    flex-grow: 1;
 }
 .get-beverage-list-num{
-   width: 30px;
+   width: 28px;
    text-align: center;
-   line-height: 30px;
+   line-height: 28px;
+   font-size: 14px;
    border: 1px solid #BDBDBD;
    border-radius: 5px;
 }
 .get-beverage-wrap button{
    background-color: #6327FE;
    color: #fff;
+   font-weight: 700;
 }
 /* section 2 */
 .money-info{
    padding: 9px 27px;
    grid-area: 1 / 2 / 2 / 3;
    background-color: #fff;
+}
+strong{
+   font-weight: 700;
 }
 
 /* section 3 */
@@ -186,11 +196,14 @@ body{
 .get-list h2{
    text-align: center;
    margin-bottom: 12px;
+   font-size: 14px;
+   font-weight: 700;
 }
 .get-list .get-beverage-list{
    height: 364px;
 }
 .total-text{
    text-align: right;
-   margin-top: 6px;
+   margin-top: 7px;
+   font-size: 12px;
 }
