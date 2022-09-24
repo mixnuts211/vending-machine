@@ -44,7 +44,7 @@ body{
    font-family: inherit;
    border: #ddd;
    background-color: #fff;
-   box-shadow: 1px 1px 3px 3px #ddd;
+   box-shadow: 1px 1px 3px 2px #ddd;
    cursor: pointer;
 }
 /* content - header */
@@ -103,8 +103,9 @@ body{
 }
 
 
-.money-left-wrap, .get-beverage{
+.money-leftover-wrap, .get-beverage-wrap, .deposit-input{
    display: flex;
+   margin-bottom: 11px;
 }
 .cash-info{
    display: flex;
@@ -121,9 +122,14 @@ body{
    border-radius: 5px;
 }
 
-
-
-
+.deposit-input input{
+   flex-grow: 1;
+   padding: 6px;
+   font-size: inherit;
+   font-weight: inherit;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+}
 
 /* section 2 */
 .money-info{
