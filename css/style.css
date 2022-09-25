@@ -62,7 +62,7 @@ body{
  .main{
    width:100%;
    display: grid;
-   grid-template-columns: 360px 360px;
+   grid-template-columns: repeat(2, 360px);
    grid-template-rows: 50px 474px;
    gap: 20px 28px;
  }
@@ -75,7 +75,7 @@ body{
 }
 .beverage-list{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: repeat(3, 94px);
    grid-template-rows: 1fr 1fr;
    gap: 12px;
    margin-bottom: 20px;
@@ -84,7 +84,6 @@ body{
    position: relative;
 }
 .beverage-list-btn{
-   width: 94px;
    padding: 11px;
    border-radius: 10px;
 }
