@@ -229,3 +229,17 @@ strong {
     background-size: 62px;
     border-radius: 10px;
 }
+
+/* Media Query */
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 360px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    .header {
+        width: 166px;
+        margin: 0 auto;
+        margin-bottom: 18px;
+    }
+}
