@@ -242,4 +242,22 @@ strong {
         margin: 0 auto;
         margin-bottom: 18px;
     }
+    .main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 360px;
+        grid-template-rows: 515px 50px 474px;
+        gap: 0;
+    }
+    .money-info {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .get-list {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .beverage-info {
+        padding: 18px 27px 0px 27px;
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #fff;
+    }
 }
