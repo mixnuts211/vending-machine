@@ -31,6 +31,8 @@ h2 {
 
 /* Layout */
 .wrapper {
+    display: flex;
+    gap : 20px;
     width: 748px;
     margin: 0 auto;
 }
@@ -57,27 +59,29 @@ body {
 
 /* Content - Header */
 .header {
+    position:absolute;
     width: 386px;
-    margin: 0 auto;
-    margin-bottom: 68px;
+    left:50%;
+    transform: translateX(-50%);
+    /* margin-bottom: 68px; */
 }
 h1 img {
     width: 100%;
 }
 
 /* Content - Main */
-.main {
+/* .main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 360px);
     grid-template-rows: 50px 474px;
     gap: 20px 28px;
-}
+} */
 
 /* Section 1 */
 .beverage-info {
+    flex-basis:360px;
     padding: 31px 27px 28px 27px;
-    grid-area: 1 / 1 / 3 / 2;
     background-color: #fff;
 }
 .beverage-list {
@@ -189,7 +193,6 @@ h1 img {
 /* Section 2 */
 .money-info {
     padding: 9px 27px;
-    grid-area: 1 / 2 / 2 / 3;
     background-color: #fff;
 }
 strong {
@@ -198,8 +201,8 @@ strong {
 
 /* Section 3 */
 .get-list {
+    flex-basis:360px;
     padding: 25px 27px;
-    grid-area: 2 / 2 / 3 / 3;
     background-color: #fff;
 }
 .get-list h2 {
